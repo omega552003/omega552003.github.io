@@ -134,9 +134,11 @@ footer p.linkani a:active {color: white;}
 
 .row.header {
   flex: 0 1 auto;
-  background-image: linear-gradient(to right, rgb(0, 66, 119), rgb(1, 100, 144), transparent, transparent), url('./images/F-15.jpg');
+  /* background-image: linear-gradient(to right, rgb(0, 66, 119), rgb(1, 100, 144), transparent, transparent), url('./images/F-15.jpg'); */
+  background-image: url('./images/descent.png');
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right top;
+  /* background-position: center top; */
   padding: 10px;
 }
 
