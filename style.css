@@ -1,0 +1,220 @@
+/* Cascading Style Sheet
+/* HTML */
+
+* {
+  font-family: Verdana,sans-serif;
+  box-sizing: border-box;
+}
+
+*:before, *:after {box-sizing: border-box;}
+
+html {background-size: cover;}
+
+body {
+  background-image: linear-gradient(to bottom right, rgb(0, 66, 119), rgb(3, 120, 174), rgb(105, 181, 205));
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-size: 100%;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding: 10px 16px 6px;
+}
+
+nav a:hover {
+  background-color: #aaa;
+  color: black;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 3px 3px black;
+  font-size: 2.5em;
+  font-variant: small-caps;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  text-shadow: 1px 2px 2px black;
+  font-size: 1.5em;
+  font-variant: small-caps;
+}
+
+iframe {border:none;}
+
+div.inline {
+  color: #EEE;
+  background-color: #39c;
+  margin-left: 2em;
+  box-shadow: 0.25em 0.25em 0.1em black;
+  padding: 0.1em 0.4em;
+  display: none;
+}
+
+dl {padding: 10px 0px;}
+
+dd, p {font-size: 0.6em;}
+
+dd {padding: 0.15em;}
+
+span:hover + div.inline {display: inline;}
+
+table {width: 66%;}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer {
+  background-color: #333;
+  bottom: 0;
+  color: #f2f2f2;
+  font-variant: small-caps;
+  padding-left: 8px;
+  position: fixed;
+  width: 100%;
+}
+
+footer .side-image {
+    display: block;
+    height: 3.66em;
+    margin-right: 0.5em;
+    padding-top: 0.5em;
+    width:auto;
+}
+
+footer p.linkani a:visited {color: grey;}
+footer p.linkani a:link {color: #5577f2;}
+footer p.linkani a:hover {color: #aaa;}
+footer p.linkani a:active {color: white;}
+
+/* Classes */
+
+.accordion {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  outline: none;
+  background-color: #EEE;
+  box-shadow: 0px 4px 2px -2px black, inset 0px 1px 1px 0px #FFF, inset 0px -1px 1px 0px #AAA;
+  color: #444;
+  text-align: left;
+  font-size: 1em;
+  text-shadow: 0 1px 0 #fff;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.accordion:hover {background-color: #ccc;}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.row.header {
+  flex: 0 1 auto;
+  background-image: linear-gradient(to right, rgb(0, 66, 119), rgb(1, 100, 144), transparent, transparent), url('./images/F-15.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding: 10px;
+}
+
+.row.header .side-image {margin-right: -200px;}
+
+.row.navbar {
+  width: 100%;
+  height: 36px;
+  background-color: #333;
+  box-shadow: 0px 4px 3px black;
+  z-index: 1;
+}
+
+.row.content {
+  flex: 1 1 auto;
+  overflow: hidden;
+  overflow-y: auto;
+  margin: 0px 0px 48px;
+}
+
+.column, .side-image {float: left;}
+
+.column.side {width: 16%;}
+
+.column.middle {width: 68%;}
+
+.panel {
+  padding: 0px 18px;
+  margin: 0px 10px;
+  max-height: 0;
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.txt {
+  box-align: center;
+  width: 100%;
+  height: 35em;
+  padding: 10px 0px;
+}
+
+/* Link Animation: Brackets */
+
+.linkani a:visited {color: #5588bb;}
+.linkani a:link {color: #2244aa;}
+.linkani a:hover {color: #39c;}
+.linkani a:active {color: grey;}
+
+.linkani a img {
+  height: 0.9em;
+  width: auto;
+  margin-bottom: -0.15em;
+}
+
+.linkani a::before,
+.linkani a::after {
+  display: inline-block;
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.linkani a::before {
+  margin-right: 10px;
+  content: '[';
+  transform: translateX(20px);
+}
+
+.linkani a::after {
+  margin-left: 10px;
+  content: ']';
+  transform: translateX(-20px);
+}
+
+.linkani a:hover::before,
+.linkani a:hover::after,
+.linkani a:focus::before,
+.linkani a:focus::after {
+  opacity: 1;
+  transform: translateX(0px);
+}
