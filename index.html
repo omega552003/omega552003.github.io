@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Title Here</title>
+    <link rel="stylesheet" href="resources/styles.css">
 </head>
 <body>
-    <!-- Your content goes here -->
-    Hello World!
+    <div class="box">
+              
+      <div class="row header"><!-- Start of Header -->
+          <h1>Descent</h1>
+          <h2>Information</h2>
+      </div><!-- End of Header -->
+           
+      <div class="row navbar"><!-- Start of row-navbar -->
+        <div class="column side">
+          &nbsp;<!-- Filler for alignment -->
+        </div>
+        <div class="column middle">
+          <nav id="nav">
+            <a href="#" id="link-main" title="Main">Main</a>
+            <a href="#" id="link-robots" title="Robots">Robots</a>
+            <a href="#" id="link-about" title="About">About</a>
+          </nav>
+        </div>
+      </div><!-- End of row navbar -->
+
+      <div class="row content">
+        <div class="column side">
+          &nbsp;<!-- Filler for alignment -->
+        </div><!-- End of column side -->
+
+        <div class="column middle" id="content"><!-- Start of Content -->
+          <div class="article" id="article-main"><!-- Start of Main -->
+            <ul id="topics">
+              <button class="accordion">General Links</button>
+              <div class="panel">
+                <dl class="linkani" id="linkani">
+                  <dt><a href="#"> I'm a link</a></dt>
+                </dl>
+              </div><!-- End of Panel -->
+            </ul><!-- End of Topics ul -->
+          </div><!-- End article About -->
+              
+          <div class="article" id="article-robot"><!-- Start Robot -->
+            <ul id="topics">
+              <button class="accordion">Read Me</button>
+              <div class="panel">
+                <p>Hi</p>
+              </div><!-- End of Read Me Panel -->
+            </ul><!-- End of Topics ul -->
+          </div><!-- End article About -->
+        
+          <div class="article" id="article-about"><!-- Start About Page -->
+            <ul id="topics">
+              <button class="accordion">Read Me</button>
+              <div class="panel">
+                <p>Hi</p>
+              </div><!-- End of Read Me Panel -->
+            </ul><!-- End of Topics ul -->
+          </div><!-- End article About -->
+        </div><!-- End of Content -->
+      </div><!-- End of row content -->
+
+      <footer>
+        <img class='side-image' src="./resources/images/USFlag.png" loading="lazy"/>
+        <p class="linkani" id="linkani">Created by: omega552003<br />
+        Contact information: <a href="mailto:xxx@com">&#x2709; clifton.gainor@us.af.mil</a><br />
+        <!--Modified:(UTC -4:00) 9:44 AM 12/14/2023<br />
+        Source code: <a href="https://github.com/omega552003/AF-LinksPage">https://github.com/omega552003/AF-LinksPage</a>-->
+        </p>
+      </footer><!-- End of row footer -->
+
+    </div><!-- End of box -->
 </body>
 </html>
