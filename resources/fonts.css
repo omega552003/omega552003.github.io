@@ -1,0 +1,21 @@
+@font-face {
+    font-family:'Descent Score';
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+    font-fallback:sans-serif;
+    src:url(./descscor.otf) format('OpenType')
+}
+@font-face {
+    font-family:'Descent Menu';
+    font-weight:600;
+    font-display:swap;
+    font-fallback:sans-serif;
+    src:url(./descmenu.otf) format('OpenType')
+}
+@font-face {
+    font-family:'Descent Logo';
+    font-weight:700;
+    font-display:swap;
+    font-fallback:sans-serif;
+    src:url(./descent.otf) format('OpenType')
